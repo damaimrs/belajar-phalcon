@@ -17,7 +17,7 @@
               </div>
               <div class="form-group">
                   <label>Waktu</label>
-                  <input type='text' class="form-control" id="datetimepicker4" />
+                  <input type='text' class="form-control" id="datetimepicker4" onclick="calendar()"/>
               </div>
               <button type="submit" class="btn btn-primary">Simpan</button>
           </form>

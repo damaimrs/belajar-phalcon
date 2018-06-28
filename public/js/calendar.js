@@ -1,4 +1,5 @@
 
 function calendar () {
-    $('#datetimepicker4').datetimepicker();
+    console.log("masuk");
+    $("#datetimepicker4").datetimepicker();
 }
