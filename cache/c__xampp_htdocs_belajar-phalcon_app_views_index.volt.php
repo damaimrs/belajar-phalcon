@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Tutorial CRUD Phalcon</title>
         <?= $this->tag->stylesheetLink('css/bootstrap.min.css') ?>
-        <?= $this->tag->stylesheetLink('css/bootstrap-datetimepicker.min.css') ?>
+        <?= $this->tag->stylesheetLink('css/bootstrap-datetimepicker.css') ?>
         <?= $this->tag->javascriptInclude('js/jquery.js') ?>        
         <?= $this->tag->javascriptInclude('js/moment.js') ?>
         <?= $this->tag->javascriptInclude('js/transition.js') ?>

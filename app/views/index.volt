@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Tutorial CRUD Phalcon</title>
         {{ stylesheet_link('css/bootstrap.min.css') }}
-        {{ stylesheet_link('css/bootstrap-datetimepicker.min.css') }}
+        {{ stylesheet_link('css/bootstrap-datetimepicker.css') }}
         {{ javascript_include('js/jquery.js') }}        
         {{ javascript_include('js/moment.js') }}
         {{ javascript_include('js/transition.js') }}
