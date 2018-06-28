@@ -15,6 +15,10 @@
                   <label>Email Pegawai</label>
                   <input type="email" class="form-control" placeholder="email pegawai.." name="email-pegawai" required>
               </div>
+              <div class="form-group">
+                  <label>Waktu</label>
+                  <input type='text' class="form-control" id="datetimepicker4" />
+              </div>
               <button type="submit" class="btn btn-primary">Simpan</button>
           </form>
         </div>
