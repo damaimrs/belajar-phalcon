@@ -1,12 +1,4 @@
-<html>
- <head>
-  <title>Tutorial Bootstrap dan Phalcon</title>
-  {{ stylesheet_link('css/bootstrap.min.css') }}
-  {{ javascript_include('js/bootstrap.min.js') }}
- </head>
- <body>
- <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-     <!-- Brand and toggle get grouped for better mobile display -->
+<!--  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
      <div class="container-fluid">
          <div class="navbar-header">
              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
@@ -17,7 +9,6 @@
              </button>
              <a class="navbar-brand" href="#">Belajar Phalcon</a>
          </div>
-         <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="collapse navbar-collapse" id="navbarCollapse">
              <ul class="nav navbar-nav">
                  <li><a href="{{ url('index/index') }}">Home</a></li>
@@ -26,11 +17,22 @@
              </ul>
          </div>
      </div>
- </nav>
+ </nav> -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Phalcon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url('index/index') }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('data/index') }}">Pegawai</a>
+      </li>
+  </div>
+</nav>
   {% block content %}
   {% endblock %}
- </body>
-</html>
- 
-<span style="font-family: Times New Roman;"><span style="white-space: normal;">
-</span></span>
