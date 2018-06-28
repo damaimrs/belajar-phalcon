@@ -30,8 +30,8 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    {{form('data/update/'~p.id_pegawai, 'role':'form')}}
+                  {{form('data/update/'~p.id_pegawai, 'role':'form')}}
+                  <div class="modal-body">                    
                         <div class="form-group">
                             <label>Nama Pegawai</label>
                             <input type="text" class="form-control" placeholder="nama pegawai.." name="nama-pegawai" value="{{ p.nama_pegawai }}" required>
@@ -39,14 +39,13 @@
                         <div class="form-group">
                             <label>Email Pegawai</label>
                             <input type="email" class="form-control" placeholder="email pegawai.." name="email-pegawai" value="{{ p.email_pegawai }}" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                    </form>
+                        </div>                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                   </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -95,4 +94,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %}
