@@ -1,4 +1,4 @@
-{% extends 'base.volt' %}
+{% extends 'index.volt' %}
  
 {% block content %} 
 <div class="jumbotron">

@@ -1,5 +1,18 @@
-{% extends 'base.volt' %}
- 
+{% extends 'index.volt' %}
+
+{% block head %}
+
+  //{{ javascript_include('js/calendar.js') }}
+  //{{ javascript_include('js/moment.js') }}
+  //{{ javascript_include('js/transition.js') }}
+  //{{ javascript_include('js/collapse.js') }}
+  //{{ stylesheet_link('css-axell/bootstrap.min.css') }}
+  {{ stylesheet_link('css-axell/bootstrap-datetimepicker.min.css') }}       
+  {{ javascript_include('js-axell/bootstrap-datetimepicker.min.js') }}
+  // {{ javascript_include('js/calendar.js') }}
+
+{% endblock %} 
+
 {% block content %} 
  
 <div class="container-fluid" style="margin-top:100px">    
@@ -17,7 +30,7 @@
               </div>
               <div class="form-group">
                   <label>Waktu</label>
-                  <input type='text' class="form-control" id="datetimepicker4" onclick="calendar()"/>
+                  <input type='text' class="form-control" id="datetimepicker4" name="tanggal-pegawai"/>
               </div>
               <button type="submit" class="btn btn-primary">Simpan</button>
           </form>
@@ -98,5 +111,13 @@
         </div>
     </div>
 </div>
+
+<script>
+$(function () {
+  $('#datetimepicker4').datetimepicker({
+    format: "YY:MM:DD HH:mm:ss"
+  });
+});
+</script>
 
 {% endblock %}

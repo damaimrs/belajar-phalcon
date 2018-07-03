@@ -11,6 +11,7 @@ class DataController extends ControllerBase {
 		$pegawai = new Pegawai();
 		$pegawai->nama_pegawai = $this->request->getPost("nama-pegawai");
 		$pegawai->email_pegawai = $this->request->getPost("email-pegawai");
+		$pegawai->date_pegawai = $this->request->getPost("tanggal-pegawai");
 
 		if (!$pegawai->save()) {
 
